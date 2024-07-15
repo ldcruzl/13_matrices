@@ -12,5 +12,16 @@ int main(){
             cout<<"Ingrese el valor para ["<<i+1<<"]"<<" ["<<j+1<<"]: ";cin>>matriz[i][j];
         }
     }
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            if(i<j){
+                s=s+matriz[i][j];
+            }
+        }
+    }
+    system("cls");
+    cout<<"------Sumatoria triangular superior------"<<endl;
+    cout<<"La sumatoria es de: "<<s<<endl;
+    system("pause");
     return 0;
 }
